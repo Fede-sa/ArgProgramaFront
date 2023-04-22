@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.baner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: initial;
+}
+
+.fotoPerfil{
+    position: absolute;
+    width: 20%;
+}
+ul li {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+nav {
+    height: 200px;
+    border: solid black 5px;
+    background-color: #000000;
+}
+h1 { 
+    color: white;
+    position: absolute;
+    z-index: 200;
+    text-align: right;
+    background-color: aqua;
+} */
