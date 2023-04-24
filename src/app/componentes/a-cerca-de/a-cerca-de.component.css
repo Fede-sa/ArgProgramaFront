@@ -1,0 +1,11 @@
+.fotoYnombre_div{
+    display: flex;
+}
+.fotoPerfil{
+    width: 150px;
+    margin-left: 5%;
+    margin-top: -75px
+}
+.acerca{
+    border: solid black;
+}  

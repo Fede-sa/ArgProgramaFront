@@ -1,0 +1,15 @@
+.font{
+    font-size: 2rem;
+}
+.btn_loguin{
+    margin-right: 5%;
+}
+.nav_funcional{
+    width: 30%;
+    justify-content: space-around;
+    align-items: center;
+}
+.banner{
+    height: 150px;
+    background-image: url(./assets/img/banner2.png);
+}
