@@ -1,0 +1,17 @@
+.fa-square-plus{
+    font-size: 2rem;
+}
+.ul__card__exp{
+    display: flex;
+    list-style: none;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.ul__card__exp li{
+    margin-right: 15px;
+}
+.header__exp{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
