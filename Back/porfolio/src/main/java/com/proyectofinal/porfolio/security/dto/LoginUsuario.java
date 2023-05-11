@@ -13,6 +13,11 @@ public class LoginUsuario {
         return nombreUsuario;
     }
 
+    public LoginUsuario() {
+    }
+
+    
+    
     public void setNombreUsuario(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }

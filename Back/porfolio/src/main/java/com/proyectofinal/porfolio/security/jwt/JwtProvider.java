@@ -29,11 +29,7 @@ public class JwtProvider {
     
     public String generateToken(Authentication authentication){
         UsuarioAdmin usuarioAdmin = (UsuarioAdmin) authentication.getPrincipal();
-        return Jwts.builder().setSubject(usuarioAdmin.getUsername())
-                .setIssuedAt(new Date())
-                .setExpiration(new Date(new Date().getTime()+expiration*1000))
-                .signWith(SignatureAlgorithm.HS512,secret)
-                .compact();           
+        return Jwts.builder().setSubject(usuarioAdmin.getUsername()).setIssuedAt(new Date()).setExpiration(new Date(new Date().getTime()+expiration*1000)).signWith(SignatureAlgorithm.HS512,secret).compact();           
     }
     
     public String getNombreUsuarioFromToken(String token){
