@@ -3,5 +3,5 @@ package com.proyectofinal.porfolio.security.enums;
 
 
 public enum RolNombre {
-    Role_Admin, Role_User
+    ROLE_ADMIN, ROLE_USER
 }

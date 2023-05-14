@@ -24,7 +24,7 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 @EnableMethodSecurity
 public class MainSecurity {
     @Autowired
-    UserDetailsServiceImp userDetailsServiceImpl;
+    UserDetailsServiceImp userDetailsServiceImp;
 
     @Autowired
     JwtEntryPoint jwtEntryPoint;

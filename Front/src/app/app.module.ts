@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
@@ -14,6 +13,10 @@ import { PorfolioComponent } from './componentes/porfolio/porfolio.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './componentes/login/login.component';
+import { FormsModule } from '@angular/forms';
+import { intercetorProvider } from './servicios/interceptor-service';
+import { NewExpComponent } from './componentes/experiencia/new-exp.component';
+import { EditarExpComponent } from './componentes/experiencia/editar-exp.component';
 
 
 @NgModule({
@@ -26,16 +29,20 @@ import { LoginComponent } from './componentes/login/login.component';
     SkillsComponent,
     FooterComponent,
     PorfolioComponent,
-    LoginComponent
+    LoginComponent,
+    NewExpComponent,
+    EditarExpComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
   ],
-  providers: [],
+  exports: [LoginComponent],
+  providers: [intercetorProvider],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

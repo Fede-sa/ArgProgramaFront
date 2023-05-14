@@ -1,5 +1,5 @@
 <header>
-  <nav class="navbar navbar-expand-md navbar-dark bg-primary bg-body-tertiary justify-content-between">
+  <nav class="navbar navbar-expand-md navbar-dark nav bg-primary bg-body-tertiary justify-content-between">
     <div class="navbar-brand">
       <img [src]="miPorfolio.LogoArgPrograma">
     </div>
@@ -24,8 +24,9 @@
           </li>
         </ul>
       </div>
-      <form class="form-inline btn_loguin">
-        <button class="btn btn-light" type="button" (click)="login()">Login</button>
+      <form class="form-inline">
+        <button class="btn btn-light btn_loguin" type="button" (click)="login()" *ngIf="!isLogged">INICIAR</button>
+        <button class="btn btn-light btn_loguin" type="button" (click)="onLogOut()" *ngIf="isLogged">CERRAR</button>
       </form>
     </div>
   </nav>

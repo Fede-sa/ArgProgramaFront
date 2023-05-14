@@ -1,9 +1,21 @@
+
+header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: solid black;
+}
+.nav{
+    width: 100%;
+    margin: 0;
+    padding: 10px 30px;
+}
 .font{
     font-size: 2rem;
 }
-.btn_loguin{
+/* .btn_loguin{
     margin-right: 5%;
-}
+} */
 .nav_funcional{
     width: 30%;
     justify-content: space-around;
@@ -11,5 +23,6 @@
 }
 .banner{
     height: 150px;
+    width: 100%;
     background-image: url(../../../assets/img/banner2.png);
 }

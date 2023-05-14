@@ -7,12 +7,12 @@ public class JwtDto {
 
     private String token;
     private String bearer = "Bearer";
-    private String nombreUsurio;
+    private String nombreUsuario;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public JwtDto(String token, String nombreUsurio, Collection<? extends GrantedAuthority> authorities) {
+    public JwtDto(String token, String nombreUsuario, Collection<? extends GrantedAuthority> authorities) {
         this.token = token;
-        this.nombreUsurio = nombreUsurio;
+        this.nombreUsuario = nombreUsuario;
         this.authorities = authorities;
     }
 
@@ -32,12 +32,12 @@ public class JwtDto {
         this.bearer = bearer;
     }
 
-    public String getNombreUsurio() {
-        return nombreUsurio;
+    public String getNombreUsuario() {
+        return nombreUsuario;
     }
 
-    public void setNombreUsurio(String nombreUsurio) {
-        this.nombreUsurio = nombreUsurio;
+    public void setNombreUsuario(String nombreUsuario) {
+        this.nombreUsuario = nombreUsuario;
     }
 
     public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -47,5 +47,7 @@ public class JwtDto {
     public void setAuthorities(Collection<? extends GrantedAuthority> authorities) {
         this.authorities = authorities;
     }
+
+
 
 }
